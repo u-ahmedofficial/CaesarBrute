@@ -99,7 +99,7 @@ def sendMessage():
 
 # This is the program entry point
 def main():
-	initClient('193.37.215.126',1337)
+	initClient('<client IP>',1337)
 	recvMessage()
 	sendMessage()
 
