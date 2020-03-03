@@ -7,7 +7,7 @@ A very simple Simulation of insecure encrypted communication between two end use
 
 - Windows 7,8,10 / Linux / OSX
 
-- python3
+- Python2 / Python3
 
 
 ### Installing
