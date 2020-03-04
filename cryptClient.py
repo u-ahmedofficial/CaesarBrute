@@ -8,12 +8,12 @@
 
 
 # Some important Libraries
-import socket,re,uuid,time
+import socket,re,time,netifaces
 
 # Some Global Variables
 ###########################################
 host = socket.gethostname() # Fetches hotname
-mac=':'.join(re.findall('..','%012x'%uuid.getnode())); # For fetching MAC Address
+mac= netifaces.ifaddresses('wlan0')[netifaces.AF_LINK][0]['addr']# For fetching MAC Address
 clientsocket=''
 #########################################
 

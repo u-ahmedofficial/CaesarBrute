@@ -9,6 +9,8 @@ A very simple Simulation of insecure encrypted communication between two end use
 
 - Python2 / Python3
 
+- Netifaces Library
+
 
 ### Installing
 
@@ -21,6 +23,11 @@ sudo apt-get install python3
 
 ```
 brew install python3
+```
+- Installing Netifaces
+
+```
+python3 -m pip install netifaces
 ```
 
 ### Usage

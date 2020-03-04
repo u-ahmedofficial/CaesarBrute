@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-import socket,re,uuid,time
+import socket,re,time,netifaces
 ########################
 # Some Global Variables
 serversocket=''
 host = socket.gethostname() 
-mac=':'.join(re.findall('..','%012x'%uuid.getnode()));
+mac=netifaces.ifaddresses('wlan0')[netifaces.AF_LINK][0]['addr']
 
 ##########################
 
